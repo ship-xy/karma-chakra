@@ -3,17 +3,34 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.05">
     <title>Karma-Chakra</title>
     <link rel="stylesheet" href="index.css">
     <script src="./quotes.js"></script>
 </head>
 <body>
     <div id="top-div">
-	<h1><b>Karma-Chakra</b></h1>
-	<h2>A Weekly To-Do Planner.</h2>
+		 <h1><b>KARMA-CHAKRA</b></h1>
+     		 <h2>A Weekly To-Do Planner.</h2>
     </div>
-    <div id="quoteDisplay" ></div>
+    <b><i>
+	 <div id="quoteDisplay" ></div>
+    </i></b>
+    <div id="inputDiv">
+	 <input id="taskInput" placeholder="What's on your mind?"/>
+	 <button id="addTask" onclick="addTask">+</button>
+    </div>
+    <svg id="svgDaySelector" width="100" height="100" viewBox="0 0 100 100">
+	<polygon points="50,100 10,50 90,50" fill="orange" />
+    </svg>
+    <div id=dayDiv> 	
+	<svg id="svgChakra" viewBox="-150 -150 300 300" xmlns="http://www.w3.org/2000/svg">
+		<g id="g"></g>
+    </svg>
+    </div>
+    <div id="taskView">
+		<h3>DAILY TASK</h3>
+    </div>
 </body>
 <script src="./index.js"></script>
 </html>
